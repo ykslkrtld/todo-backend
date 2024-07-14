@@ -40,7 +40,7 @@ const Todo = sequelize.define('todos', {
     // Modelleri veritabanına uygula
 
 // sequelize.sync() // Create Table
-// sequelize.sync({alter: true}) // To Backup & Delete Table & create table & from backup
+sequelize.sync({alter: true}) // To Backup & Delete Table & create table & from backup
 
 // Connect to DB
 sequelize.authenticate()
