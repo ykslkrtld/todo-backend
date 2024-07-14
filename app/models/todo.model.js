@@ -16,7 +16,10 @@ const Todo = sequelize.define('todos', {
         allowNull: false
     },
 
-    description: DataTypes.TEXT, 
+    description: {
+       type: DataTypes.TEXT,
+       allowNull: false
+    }, 
 
     priority: { // 1:High, 0:Normal, -1:Low
         type: DataTypes.TINYINT,
