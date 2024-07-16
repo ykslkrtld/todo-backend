@@ -41,9 +41,9 @@ const Todo = sequelize.define('todos', {
 
 // sequelize.sync() // Create Table
 // sequelize.sync({alter: true}) // To Backup & Delete Table & create table & from backup
-(async () => {
-    await sequelize.sync({ alter: true }); // Tabloyu günceller, yoksa oluşturur
-  })();
+// (async () => {
+//     await sequelize.sync({ alter: true }); // Tabloyu günceller, yoksa oluşturur
+//   })();
 
 // Connect to DB
 sequelize.authenticate()
